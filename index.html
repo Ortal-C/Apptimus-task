@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Apptimus</title>
+	</head>
+	<body onload="onLoad()">
+		<form onsubmit="onSubmit(event)">
+			<input
+				id="banner_img"
+				type="url"
+				placeholder="Enter image url ..."
+			/>
+			<input
+				id="redirect_link"
+				type="url"
+				placeholder="Enter redirect link ..."
+			/>
+			<button>Add Banner</button>
+			<span class="msg"></span>
+		</form>
+		<div class="actions-container">
+			<button
+				class="btn-save"
+				onclick="onSave()"
+				title="Save banners to storage"
+			>
+				Save
+			</button>
+			<button onclick="onClear()" title="Clear storage">
+				Clear
+			</button>
+		</div>
+	</body>
+	<script src="js/main.js"></script>
+</html>
